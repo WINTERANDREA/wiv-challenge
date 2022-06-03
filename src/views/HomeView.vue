@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from "@/components/TheWelcome.vue";
+import Marketplace from "@/components/Marketplace.vue";
 </script>
 
 <template>
+  <h1>WIV CODING CHALLENGE</h1>
   <main>
-    <TheWelcome />
+    <Marketplace />
   </main>
 </template>
