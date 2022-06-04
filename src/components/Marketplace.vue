@@ -12,7 +12,6 @@ export default {
     async getTotalSupplyInt() {
       let _totalSupply = await contract.totalSupply()
       let totalSupply = Number(_totalSupply)
-      console.log("total supply", totalSupply)
       this.totalSupply = totalSupply
     }
   },

@@ -49,7 +49,6 @@ export default {
       };
       let response = await axios(config)
       this.price = response.data.lwinDetail[0].dataDetail
-      console.log(response)
       this.loadingComplete = true
     },
     search(key, inputArray) {
