@@ -13,7 +13,6 @@ Vue.js ^3.2.36
 ## Coding Challenge Preview
 https://wiv-coding-challenge.netlify.app/
 
-
 ## Project Setup
 
 ```sh
