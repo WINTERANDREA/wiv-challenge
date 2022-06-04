@@ -1,23 +1,7 @@
-<template>
-  <section>
-    <h1>Marketplace</h1>
-    <p>Wine available: {{ totalSupply }}</p>
-    <div class="wiv-container">
-      <div v-for="index in totalSupply">
-        <WivItem :tokenIndex="index" />
-      </div>
-    </div>
-  </section>
-</template>
-
 <script >
-import { ethers } from "ethers";
-import { abi, address } from '../contract/contract'
+import { contract } from '../contract/callContract.js'
 import WivItem from "./WivItem.vue";
 
-const url = "https://polygon-mainnet.g.alchemy.com/v2/PTORvcN4KFP437RSKVc2NoPl1ohgI4re";
-const provider = new ethers.providers.JsonRpcProvider(url);
-const contract = new ethers.Contract(address, abi, provider);
 export default {
   data() {
     return {
@@ -42,8 +26,19 @@ export default {
   components: { WivItem }
 
 }
-
 </script>
+
+<template>
+  <section>
+    <h1>Marketplace</h1>
+    <p>Wine available: {{ totalSupply }}</p>
+    <div class="wiv-container">
+      <div v-for="index in totalSupply">
+        <WivItem :tokenIndex="index" />
+      </div>
+    </div>
+  </section>
+</template>
 
 <style>
 .wiv-container {

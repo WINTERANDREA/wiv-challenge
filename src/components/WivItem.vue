@@ -106,6 +106,8 @@ export default {
 .info {
   color: #444;
   padding: 10px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 p span {
