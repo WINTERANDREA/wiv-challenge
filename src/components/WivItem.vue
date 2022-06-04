@@ -40,8 +40,8 @@ export default {
         method: 'post',
         url: 'https://sandbox-api.liv-ex.com/data/v2/priceData',
         headers: {
-          'CLIENT_KEY': '1fcd0df0-07ea-44d3-bf56-0453ab1d7dca',
-          'CLIENT_SECRET': 'sqMSah0k',
+          'CLIENT_KEY': import.meta.env.VITE_CLIENT_KEY,
+          'CLIENT_SECRET': import.meta.env.VITE_CLIENT_SECRET,
           'ACCEPT': 'application/json',
           'CONTENT-TYPE': 'application/json'
         },
